@@ -1,0 +1,25 @@
+{
+  "name": "nodecodecoverage",
+  "version": "1.0.0",
+  "description": "Simple Node Code Coverage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarthikRajaK/NodeCodeCoverage.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KarthikRajaK/NodeCodeCoverage/issues"
+  },
+  "homepage": "https://github.com/KarthikRajaK/NodeCodeCoverage#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "codecov": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1"
+  }
+}
