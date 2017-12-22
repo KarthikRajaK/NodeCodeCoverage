@@ -4,7 +4,7 @@
   "description": "Simple Node Code Coverage",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover node_modules/mocha/bin/_mocha && codecov"
+    "test": "mocha && mocha test --require blanket -R markdown > coverage.md"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/KarthikRajaK/NodeCodeCoverage#readme",
   "devDependencies": {
+    "blanket": "^1.2.3",
     "chai": "^4.1.2",
     "codecov": "^3.0.0",
     "istanbul": "^0.4.5",

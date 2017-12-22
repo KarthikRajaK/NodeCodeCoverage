@@ -1,0 +1,50 @@
+    <section class="suite">
+      <h1>Simple Controller Verification</h1>
+      <dl>
+        <section class="suite">
+          <h1>Welcome Greetings</h1>
+          <dl>
+            <dt>Greet as Welcome</dt>
+            <dd><pre><code>var name = &#x27;Karthik Raja&#x27;;
+var message = controller.greet(name);
+expect(message).to.equal(&#x27;Welcome Karthik Raja&#x27;);</code></pre></dd>
+            <dt>Convert and Greet</dt>
+            <dd><pre><code>var name = &#x27;KARTHIK-RAJA&#x27;;
+var nameLower = simple.convertLowerCase(name);
+var message = controller.greet(nameLower);
+expect(message).to.equal(&#x27;Welcome karthik raja&#x27;);</code></pre></dd>
+          </dl>
+        </section>
+      </dl>
+    </section>
+    <section class="suite">
+      <h1>Simple Operation Verification</h1>
+      <dl>
+        <section class="suite">
+          <h1>Uppercase Convertor</h1>
+          <dl>
+            <dt>should original value will converted to uppercase</dt>
+            <dd><pre><code>var name = &#x27;karthik raja&#x27;;
+var nameUpper = simple.convertUpperCase(name);
+expect(nameUpper).to.equal(&#x27;KARTHIK RAJA&#x27;);</code></pre></dd>
+            <dt>should original value will converted and remove - to </dt>
+            <dd><pre><code>var name = &#x27;karthik-raja&#x27;;
+var nameUpper = simple.convertUpperCase(name);
+expect(nameUpper).to.equal(&#x27;KARTHIK RAJA&#x27;);</code></pre></dd>
+          </dl>
+        </section>
+        <section class="suite">
+          <h1>Lowercase Convertor</h1>
+          <dl>
+            <dt>should original value will converted to lowercase</dt>
+            <dd><pre><code>var name = &#x27;KARTHIK RAJA&#x27;;
+var nameLower = simple.convertLowerCase(name);
+expect(nameLower).to.equal(&#x27;karthik raja&#x27;);</code></pre></dd>
+            <dt>should original value will converted and remove - to </dt>
+            <dd><pre><code>var name = &#x27;KARTHIK-RAJA&#x27;;
+var nameLower = simple.convertLowerCase(name);
+expect(nameLower).to.equal(&#x27;karthik raja&#x27;);</code></pre></dd>
+          </dl>
+        </section>
+      </dl>
+    </section>
