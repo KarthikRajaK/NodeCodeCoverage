@@ -16,7 +16,15 @@ describe('Simple Operation Verification', function(){
         });
     });
     describe('Lowercase Convertor', function(){
-        it('should original value will converted to uppercase');
-        it('should original value will converted and remove - to ');
+        it('should original value will converted to lowercase', function(){
+            var name = 'KARTHIK RAJA';
+            var nameLower = simple.convertLowerCase(name);
+            expect(nameLower).to.equal('karthik raja');
+        });
+        it('should original value will converted and remove - to ', function(){
+            var name = 'KARTHIK-RAJA';
+            var nameLower = simple.convertLowerCase(name);
+            expect(nameLower).to.equal('karthik raja');
+        });
     });
 });

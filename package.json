@@ -4,13 +4,13 @@
   "description": "Simple Node Code Coverage",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "istanbul cover node_modules/mocha/bin/_mocha && codecov"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KarthikRajaK/NodeCodeCoverage.git"
   },
-  "author": "",
+  "author": "KarthikRajaK",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/KarthikRajaK/NodeCodeCoverage/issues"
